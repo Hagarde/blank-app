@@ -7,16 +7,22 @@ import random
 st.set_page_config(page_title="Anniversaire 🎉", page_icon="🎂", layout="centered")
 
 st.title("🎉 Joyeux Anniversaire ! 🎂")
-st.write("Bienvenue sur l'app spéciale pour toi !")
+st.write("Bienvenue sur l'app spéciale pour toi, Alex!")
 
 # ---------------------
 # CAROUSEL DE PHOTOS
-st.header("📸 Souvenirs")
+st.header("📸 Souvenirs, ( j'ai pas d'images perso parce que l'app est publique donc pas de diulgation de phtos dossiers ou autre tkt )")
 photos = [
-    "photos/photo1.jpg",
-    "photos/photo2.jpg",
-    "photos/photo3.jpg"
+    "photos/ami1.jpg",
+    "photos/ami2.jpg",
+    "photos/ami3.jpg",
+    "photos/ami4.jpg",
+    # Exemple de lien internet (ajoute tes propres liens !)
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqVHMws1zRWxBs_0_QxjFAo6zHSK7BetB0A&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYXymBjm0T5QymIGls-OJU9N7NFBGwlbfaA&s", 
+    "https://media.licdn.com/dms/image/v2/C4D03AQGkdak3w976gg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1615416791947?e=2147483647&v=beta&t=3xRdAb4pbTp-5meCgDCf9rDL2OVYrUtL99NpOX8y2-E"
 ]
+
 
 if "index" not in st.session_state:
     st.session_state.index = 0
