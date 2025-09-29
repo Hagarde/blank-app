@@ -83,8 +83,11 @@ calculs = [
     {"q": "Force centripète pour satellite de masse 500kg, rayon 7000km, vitesse 7.5km/s ? (en N)", 
      "answer": str(round(500 * (7500**2) / 7_000_000))},
     {"q": "Énergie potentielle mgh, m=2kg, h=10m, g=9.81 ?", 
-     "answer": str(round(2*9.81*10))}
+     "answer": str(round(2*9.81*10))},
+    {"q": "Travail d’une force de 10 N sur un déplacement de 3 m (angle nul) ?", 
+     "answer": "30"}
 ]
+
 for i, c in enumerate(calculs):
     reponse = st.text_input(f"{i+1}. {c['q']}", key=f"calc_{i}")
     if reponse:
